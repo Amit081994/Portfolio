@@ -16,13 +16,14 @@
 </head>
 
 <body>
-  
     <div class="container-fluid about-modal">
         <div class="row justify-content-center" style="padding: 80px 0px;">
             <div class="col-3"></div>
             <div class="col-lg-6 ">
                 <div class="mdl-content">
-                    <video src="images/v.mp4" loop autoplay width="50"></video>
+                    <video loop autoplay muted width="50">
+                        <source src="images/v.mp4" type="video/mp4">
+                    </video>
                     <span>HELLO THERE, <br><br>
                         I AM A CREATIVE USER INTERFACE DESIGNER AND DEVELOPER BASED IN RAJASTHAN, INDIA.
 
@@ -187,27 +188,10 @@
 
                     </div>
                     <div class="row mt-5">
-                        <div class="col-lg-4  mt-5">
-                            <div style="color: white; font-size: 25px; text-decoration: underline;">
-                                <a href="https://www.instagram.com/plebedesign/">instagram
-                                    <i class="fa fa-arrow-up ml-1" style="transform: rotate(40deg);" aria-hidden="true">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
-
-
-                        <div class="col-lg-4  mt-5">
-                            <div style="color: white; font-size: 25px; text-decoration: underline;">
-                                <a href="tel:7976100094">+(91)7976100094
-                                    <i class="fa fa-arrow-up ml-1" style="transform: rotate(40deg);" aria-hidden="true">
-                                    </i>
-                                </a>
-                            </div>
-                        </div>
+                      
                         <div class="col-lg-4 mt-5">
                             <div style="color: white ; font-size: 25px; text-decoration: underline;">
-                                <a href="mailto:awesomeamitawesome@gmail.com">contact me by mail
+                                <a href="mailto:awesomeamit.sharma@yahoo.com">Send an Email
                                     <i class="fa fa-arrow-up ml-1" style="transform: rotate(40deg);" aria-hidden="true">
                                     </i>
                                 </a>
@@ -232,6 +216,8 @@
 
     <script>
         butter.init({ cancelOnTouch: false });
+
+      
 
         var tl = gsap.timeline();
         tl.from(".nav-bar", { delay: 0.2, y: 50, opacity: 0, duration: 0.8, ease: Power2.easeOut });
@@ -260,6 +246,9 @@
             },
             false
         )
+
+
+
     </script>
     <script>
         $(document).ready(function () {

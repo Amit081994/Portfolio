@@ -25,6 +25,7 @@ body {
 
 }
 
+
 a,
 a:hover,
 a:focus,
@@ -82,6 +83,9 @@ a:active {
     transition: 0.5s ease;
     background-color: white;
     z-index: 1000 !important;
+    box-shadow: 0px 10px 18px -9px rgba(18,44,59,0.15);
+-webkit-box-shadow: 0px 10px 18px -9px rgba(18,44,59,0.15);
+-moz-box-shadow: 0px 10px 18px -9px rgba(18,44,59,0.15);
 }
 
 .mdl-content{
@@ -447,40 +451,3 @@ footer {
     }
 }
 
-
-.loader {
-    background-color: blue;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 9 !important;
-    transition: 300ms;
-}
-
-.progressbar,
-.percentage {
-    position: relative;
-    z-index: 9999 !important;
-    color: yellowgreen;
-    position: absolute;
-    bottom: 0;
-}
-
-.progressbar {
-    height: 1%;
-    width: 2px;
-    background-color: #ffffff;
-    transition: height 300ms;
-    left: 50%;
-    transform: translate(-50%);
-    transition: height 800ms;
-}
-.percentage h1{
-    color: white;
-    font-size: 2rem;
-}
-.percentage{
- left: 52%;
-}
